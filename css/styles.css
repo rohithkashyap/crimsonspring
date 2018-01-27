@@ -1,0 +1,77 @@
+body
+{
+    /* background-color: rgb(243, 243, 243); */
+    background-color: black;
+    font-family: Arial, sans-serif;
+    line-height: 25px;
+    /* background-image: url("../images/background.jpg"); */
+    /* background-repeat: no-repeat; */
+    /* background-repeat: repeat-y;
+    background-position: center center; */
+    
+  }
+
+a
+{
+  color:#e56a54;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 15px;
+}
+
+.container
+{
+    /* max-width: 1080px; */
+    padding: 60px 50px;
+    border-radius: 10px;
+    min-height: 500px;
+    /* margin: 0 15px 0 15px; */
+}
+
+
+
+.navbar-custom {
+    background-color:#153747;
+    color:#ffffff;
+    border-radius:0;
+}
+
+.navbar-custom .navbar-nav > li > a {
+    color:#fff;
+}
+
+.navbar-custom .navbar-nav > .active a{
+    color:white;
+    background:#0188c7;
+}
+
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus,
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus,
+.navbar-custom .navbar-nav > .open >a {
+    text-decoration: none;
+    background-color: #00478f;
+}
+
+.navbar-custom .navbar-brand {
+    color:#eeeeee;
+}
+.navbar-custom .navbar-toggle {
+    background-color:#eeeeee;
+}
+.navbar-custom .icon-bar {
+    background-color:#005bbb;
+}
+/* .navbar-collapse {
+  text-align:center;
+}
+.navbar-nav {
+    display:inline-block;
+    float:none;
+} */
