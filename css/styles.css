@@ -24,7 +24,7 @@ th, td {
     padding: 15px;
 }
 
-.container
+.container-main
 {
     /* max-width: 1080px; */
     padding: 60px 50px;
@@ -32,8 +32,6 @@ th, td {
     min-height: 500px;
     /* margin: 0 15px 0 15px; */
 }
-
-
 
 .navbar-custom {
     background-color:#153747;
