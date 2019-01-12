@@ -2,15 +2,29 @@ body
 {
     /* background-color: rgb(243, 243, 243); */
     background-color: black;
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif; */
+    font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
     line-height: 25px;
     /* background-image: url("../images/background.jpg"); */
     /* background-repeat: no-repeat; */
     /* background-repeat: repeat-y;
     background-position: center center; */
     
-  }
+}
 
+hr {
+    border: none;
+    height: 1px;
+    /* Set the hr color */
+    color: #333; /* old IE */
+    background-color: #333; /* Modern Browsers */
+}
+
+span.tab-space 
+{
+    padding-left:2em;
+}
 a
 {
   color:#e56a54;
