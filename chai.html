@@ -1,71 +1,353 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>CrimsonSpring</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <!-- <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" /> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+            // When the user scrolls down 20px from the top of the document, slide down the navbar
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("navbar").style.top = "0";
+              } else {
+                document.getElementById("navbar").style.top = "-50px";
+              }
+            }
+     </script>
+    <title>Document</title>
 </head>
-
 <body>
-
-    <!-- Nav bar here -->
-    <nav class="navbar navbar-custom navbar-fixed-top" id="nav">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="./index.html">CR</a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="./index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="rahul/rahul.html">Rahul</a>
-                    </li>
-                    <li class="active">
-                        <a href="./chai.html">Chaithra</a>
-                    </li>
-                    <!--<li>
-                        <a href="./report_guide.html">Project Report Guide</a>
-                    </li>
-                    <li>
-                        <a href="./projects.html">Projects</a>
-                    </li>
-                    <li>
-                        <a href="./schedule.html">Schedule and Resources</a>
-                    </li> -->
-                </ul>
-            </div>
+    <div class="container-fluid" style="background-color: lightcyan"> 
+        <div class="page-header">
+            <h7>Resume</h7>
         </div>
-    </nav>
-
-    <!-- TOC -->
-    <div class="container container-main text-center" style="background:white">
-        <!-- breadcrumb -->
-        <ul class="breadcrumb list-inline">
-            <li>Home</li>
-            <li class="active">Chaithra</li>
-        </ul>
-
+       
         <div class="row">
-            <div class="col-sm-12">
-               <h2>Chaithra K!</h2>
+            <div class="col-sm">
+                    <img src="resources/Chai.jpg" class="img-thumbnail" alt="Chaithra-Pic" width="304" height="136" >           </div>
+            <div class="col-sm-8" style='font-style:oblique'>
+               <h1 class="text-primary" align="center">Chaithra Mysore Varadanayaka</h1>
+               <h4 align="center">  <a class="text-secondary" >Email: </a> <a class="text-info" > mvchai18@gmail.com  </a>  <br>
+                <a class="text-secondary" >Phone: </a> <a class="text-info" > +1-412-618-6397  </a></h4>
             </div>
+            <div class="col-sm">
+                    <kbd>Print</kbd>
+            </div>
+        </div> 
+         
+         
+        <hr>  
+        <div class="row">
+            <div class="col-sm-2">
+
+            </div>
+            <div class="col-sm-8">
+                <nav class="navbar navbar-expand-sm bg-dark">
+                   <a href="https://www.linkedin.com/in/chaithra-varadanayaka">Linkedin profile</a>
+
+                </nav>
+                
+            </div>
+        </div> 
+        <hr>
+        <div class="row">
+            <div class="col-sm-2">
+
+                    <nav class="navbar bg-dark" >
+                        <div id="navbar" >
+                                <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                          <a class="nav-link" href="#professional-summary">Professional Summary</a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link" href="#skills">Skills</a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link" href="#Professional-experience">Professional Experience</a>
+                                        </li>
+                                        <li class="nav-item">
+                                              <a class="nav-link" href="#Education-background">Education Background</a>
+                                        </li>
+                                        <li class="nav-item">
+                                              <a class="nav-link" href="#Academic-projects">Academic Projects</a>
+                                         </li>
+                                         <li class="nav-item">
+                                              <a class="nav-link" href="#Internships">Internship Experience</a>
+                                         </li>
+                                         
+                                         <li class="nav-item">
+                                              <a class="nav-link" href="#Language">Languages</a>
+                                         </li>
+                                         <li class="nav-item">
+                                              <a class="nav-link" href="#Tools">Tools</a>
+                                         </li>
+                                         <li class="nav-item">
+                                              <a class="nav-link" href="#">Hobbies/Interests</a>
+                                         </li>
+                                      </ul>
+                        </div>
+                            
+                          </nav>
+            </div>
+            <div class="col-sm-8">
+                    <dl>
+                            <dt id="professional-summary">Professional Summary</dt>
+                            <dd>Skilled Systems Engineer & Information Systems Management Graduate with over 4 years of experience in designing, analyzing, implementing, and validating systems in the embedded C platform, in the Tech sectors and database domain. Extensive experience in developing test framework for hardware, software, and operating system, data management <abbr title="Extract Transform Load">(ETL)</abbr>, and web application development. Continually exceeds expectations by building strong relationships and works well with people at all levels of the organization, including stakeholders, customers, and team members. </dd>
+                        </dl>
+                        <hr>
+                        <dl>
+                            <dt id="Skills">Skills</dt>
+                            <ul class="list-group list-group-horizontal">
+                                <ul></ul>
+                                <ul></ul>
+                                <ul></ul>
+                                <ul class="list-group"> 
+                                        <li class="list-group-item-success">Requirements Analysis & Business Intelligence</li>
+                                        <li class="list-group-item-secondary">System Analysis & Firmware Enhancement</li>
+                                        <li class="list-group-item-info">Technical Background & Expertise </li>
+                                        <li class="list-group-item-warning">Strong Hands-On Project Management Skills</li>
+                                        <li class="list-group-item-danger">Security Audits & Controls</li>
+                                        <li class="list-group-item-primary">Developing & Implementing SOPs & Policy</li>
+                                        <li class="list-group-item-dark">Managing & Developing Productive Teams</li>
+                                </ul>
+                                <ul></ul>
+                                <ul></ul>
+                                <ul></ul>
+                                <ul></ul>
+
+                                <ul class="list-group">
+                                        <li class="list-group-item-dark">Software Enhancements & Implementations</li>
+                                        <li class="list-group-item-primary">Interest in & Potential for Management Roles</li>
+                                        <li class="list-group-item-danger">Data Analysis & Reporting </li>
+                                        <li class="list-group-item-warning">Hardware and Software Test Engineering</li>
+                                        <li class="list-group-item-info">Risk Management & Compliance Checks </li>
+                                        <li class="list-group-item-secondary">Component & Product Engineering </li>
+                                        <li class="list-group-item-success">Excellent Verbal & Written Communication</li>
+                                </ul>
+                                
+                            </ul>
+                        </dl>
+                        <hr>
+            </div>
+        <div class="col-sm-2">
+
+        </div>    
         </div>
+        <div class="row">
+            <div class="col-sm-2">
 
+            </div>
+            <div class="col-sm-8">
+                <dl>
+                    <dt id="Professional-experience">
+                            Professional Experience
+                    </dt>
+                    <dt>
+                       System Engineer at Tata Consultancy Services
+                    </dt>
+                    <ul>
+                        <li>Worked with executive team members, decision-makers, and stakeholders to define business requirements, systems goals, and to identify and resolve business systems issues. </li>
+                        <li>Installed, configured, tested, and maintained operating systems, application software, and system management tools, as well as configured, debugged, and supported multiple infrastructure platforms. </li>
+                        <li>Gauged the effectiveness and efficiency of existing systems; developing and implementing strategies for improving or further leveraging these systems, while writing custom scripts to increase system efficiency and lower the human intervention time on any tasks. </li>
+                        <li>Monitored and tested application performance for potential bottlenecks, identifying possible solutions and working with developers to implement those fixes.</li>
+                        <li>Proactively ensured the highest levels of systems and infrastructure availability, maintaining security, backup, and redundancy strategies, while also performing high-level root-cause analysis for service interruption recover</li>
+                        <li>Studied project specifications received from different clients, analyzing the technical and non-technical aspects in order to estimate effort, cost, and resource requirements.</li>
+                        <li>Researched and developed new hardware and software configurations along with firmware for controllers, for a project from 06/2016 to 06/2017, with specified modifications using Assembly Language and Embedded C.</li>
+                        <li>Determined the controllers' architecture, port configuration, pin configuration, timers and memory assignments, as well as developed test cases and procedures to inspect the device behavior.</li>
+                        <li>Formulated functional test cases/procedures for the entire functionality of Hydro-Lab OS and Surveyor system for a project from January to June 2016, while performing regression testing for Hydro-Lab Operating System and Surveyor Hose, identifying and reporting bugs in Redmi/JIRA</li>
+                        <li>Completed a project in 01/2016 to identify modules of a fuel dispenser, developing the structural algorithm and determining hardware architecture, as well as completed a project for a component engineering of a biomedical dispenser in 09/2015, creating change orders and documentation.</li>
+                    </ul>
+                </dl>
+              
+                   <hr>
+            </div>
+            
+        </div>
+        
+        
+        
+        <div class="row">
+         
+            <div class="col-sm-2">
+
+            </div>
+            <div class="col-sm-8">
+                <dl>
+                    <dt id="Education-background">Education Background</dt>
+                </dl>
+              <div class="table-responsive">
+                  <table class="table-striped">
+                  <tr class="table-danger">
+                      <th>University</th>
+                      <th>Major</th>
+                      <th>Year of Graduation</th>
+                      <th>Score</th>
+                  </tr>
+                  
+                  <tr class="table-primary">
+                      <td>Duquesne University</td>
+                      <td>MS in Information System Management</td>
+                      <td>2019</td>
+                      <td>3.88/4</td>
+                  </tr>
+                  
+                  <tr class="table-success">
+                      <td>University of Visvesvaraya College of Engineering</td>
+                      <td>ME in Control System and Instrumentation Engineering</td>
+                      <td>2014</td>
+                      <td>79.7/100</td>
+
+                  </tr>
+                  
+                  <tr class="table-warning">
+                      <td>The National Institute of Engineering</td>
+                      <td>BE in Electrical and Electronics Engineering</td>
+                      <td>2012</td>
+                      <td>8.3/10</td>
+                  </tr>
+                  </table>
+                  <hr>
+              </div>
+            
+
+            </div>
+            
+        </div>
+        
+        <div class="row">
+             <div class="col-sm-2">
+
+             </div>
+             <div class="col-sm-8">
+                <dl>
+                    <dt id="Academic-projects"> Academic Projects</dt>
+                    <ul>
+                        <br>
+                        <div class="btn-group-lg">
+                                <button type="button" class="btn btn-info btn-block " data-toggle="collapse" data-target="#demo">SQL & ETL to Make Business Decisions </button>
+                                <div id="demo" class="collapse">
+        
+                                        <ul>
+                                                <li>Design and implement data warehouse for a data driven decision making project. </li>
+                                                <li>Develop ETL process using SSIS tools to integrate and move data from relational OLTP to dimensional model  </li>
+                                                <li>Implement MOLAP cube with dimensions, measures, and hierarchies to answer business intelligence questions using SSAS connectivity and pivot table. </li>
+                                                
+                                        </ul>
+                                   
+        
+                                </div>
+                                <hr>
+                                <br>
+                                <button type="button" class="btn btn-info btn-block" data-toggle="collapse" data-target="#demo">Design of Data-Oriented Model for Organization </button>
+                                <div id="demo" class="collapse">
+                                    <ul>
+                                       <li>Developed UML model for an organization to enhance the performance by eliminating the inefficient methods. </li>
+                                       <li>Designed data oriented model to enable easy communication across the departments. </li>
+                                       <li>Developed functional, structural and behavioral models for the data oriented model. </li>
+                                       <li>Develop test plan, test strategy, and test cases for the existing web application product. </li>
+                                       <li>Execute test cases and log all the bugs and fix the errors in the backend of the web  application. </li>
+                                       <li>Develop the dashboard for the system to analyze the status of the business</li> 
+                                    </ul>
+                                </div>
+                                <hr>
+                                 <br>
+                                <button type="button" class="btn btn-info btn-block" data-toggle="collapse" data-target="#demo">Voice Controlled Solar Powered Robot </button>
+                                <div id="demo" class="collapse">
+                                    <ul>
+                                        <li>Developed an automatic Solar Tracker Robot (STR) which is capable to track maximum light intensity in order to optimize the power by improving the utilization of solar power. </li>
+                                        <li>Developed voice controlled robot and designed battery switching among a pack of two batteries to enhance power performance of the system. </li>
+                                    </ul>
+                                </div>    
+                                <hr>
+                                <br>
+                                <button type="button" class="btn btn-info btn-block" data-toggle="collapse" data-target="#demo">Optimal Street Lighting Management </button>
+                                <div id="demo" class="collapse">
+                                    <ul>
+                                        <li>Research project on road lighting system for optimal power utilization.  </li>
+                                        <li>Assembled and programmed a model mimicking the proposed innovative way to manage streetlight electricity usage using 8-bit Phillips 8051 microcontroller (Assembly language and C programming), motion sensors, and low power servomotors. </li>
+                                    </ul>
+                                </div>
+                        </div>
+                        
+                    </ul>
+                </dl> 
+                <hr>
+            </div>
+            
+        </div>
+    
+    <div class="row">
+        <div class="col-sm-2">
+
+        </div>
+        <div class="col-sm-8">
+            <dl>
+                <dt id="Internships">Internship Experience</dt>
+                <dd>Centre for women
+                    <ul>
+                        <li>Develop KPI models and dashboard for business activities using Microsoft Excel</li>
+                    </ul>
+                </dd>
+                <dd>Larsen & Toubro Limited (MPS-TPR) 
+                    <ul>
+                        <li>Gained experience in hardware and software testing procedures, ensuring reliability and protection of Electric Meters </li>
+                        <li>Performed tests including dry heat, glow wire, CT/PT, radio interference, and magnetic tests, as well as used simulators including electrostatic discharge, electrical fast transient, and lightning surge </li>
+                    </ul>
+
+                </dd>
+            </dl>
+             <hr>
+        </div>
+       
+    
     </div>
+    
+    <div class="row">
+        <div class="col-sm-2">
 
+        </div>
+        <div class="col-sm-8">
+           <dl>
+               <dt id="Language"> Languages</dt>
+               <ul class="list-group list-group"> 
+               <li class="list-group-item-primary"> C </li>
+               <li class="list-group-item-secondary"> Embedded C </li>
+               <li class="list-group-item-dark"> Assembly Language </li>
+               <li class="list-group-item-danger"> C# </li>
+               <li class="list-group-item-light"> SQL </li>
+               <li class="list-group-item-info"> HTML </li>
+               <li class="list-group-item-warning"> CSS</li>
+               <li class="list-group-item-light"> UML </li>
+               <li class="list-group-item-success"> Shell Scripting </li>
+               <li class="list-group-item-primary"> Python </li>
+              </ul>
+              <br>
+              <br>
+              <hr>
+                <dt id=Tools> Tools</dt>
+                <ul class="list-group list-group">
+                        <li class="list-group-item-success">  Visual Studio </li>
+                        <li class="list-group-item-primary"> SSDT </li>
+                        <li class="list-group-item-warning"> SSAS</li>
+                        <li class="list-group-item-dark"> Visio</li>
+                        <li class="list-group-item-light"> Keil  μVision  </li>
+                        <li class="list-group-item-secondary"> JIRA </li>
+                        <li class="list-group-item-danger"> Redmine</li>
+                        <li class="list-group-item-info"> Hardware and Software Configuration </li>
+                        
+
+
+                </ul>
+           </dl>
+           <hr>
+        </div>
+    </div>
+   
 </body>
-
 </html>
